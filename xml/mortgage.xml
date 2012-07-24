@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<lenders>
+	<lender name="Mortgage Company">
+		<rate>5.250</rate>
+		<payment>$1656</payment>
+		<origination>0.375</origination>
+	</lender>
+	<lender name="Mortgage Specialists">
+		<rate>4.125</rate>
+		<payment>$1633</payment>
+		<origination>0.000</origination>
+	</lender>
+	<lender name="American Financial">
+		<rate>3.375</rate>
+		<payment>$1679</payment>
+		<origination>0.000</origination>
+	</lender>
+	<lender name="Custom Lending">
+		<rate>4.250</rate>
+		<payment>$1656</payment>
+		<origination>0.000</origination>
+	</lender>
+	<lender name="Mortgage Corporation">
+		<rate>3.125</rate>
+		<payment>$1633</payment>
+		<origination>0.500</origination>
+	</lender>
+	<lender name="Lending Corporation">
+		<rate>6.000</rate>
+		<payment>$1485</payment>
+		<origination>0.000</origination>
+	</lender>
+	<lender name="Mortgages -R- Us">
+		<rate>5.500</rate>
+		<payment>$1633</payment>
+		<origination>0.000</origination>
+	</lender>
+	<lender name="Another Mortgage Company">
+		<rate>7.250</rate>
+		<payment>$2000</payment>
+		<origination>0.250</origination>
+	</lender>
+</lenders>

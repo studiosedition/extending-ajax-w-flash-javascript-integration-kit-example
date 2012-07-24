@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Extending AJAX with the Flash JavaScript Integration Kit</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/Exception.js"></script>
+<script type="text/javascript" src="js/FlashTag.js"></script>
+<script type="text/javascript" src="js/FlashSerializer.js"></script>
+<script type="text/javascript" src="js/FlashProxy.js"></script>
+<script type="text/javascript" src="js/xmlHttpRequest.js"></script>
+<script type="text/javascript">
+var uid = new Date().getTime();
+var flashProxy = new FlashProxy(uid, 'flash/JavaScriptFlashGateway.swf');
+
+function highlightItem(param, newcolor)
+{
+	document.getElementById(param).style.backgroundColor = newcolor;
+}
+
+</script>
+</head>
+
+<body onload="createXMLHttpRequest('xml/mortgage.xml');">
+
+<br/>
+<div id="main">
+	<script type="text/javascript">
+		var tag = new FlashTag('flash/chart.swf', 500, 250, '7,0,14,0');
+		tag.setFlashvars('lcId='+uid);
+		tag.write(document);
+	</script>
+	<div id="content"></div>
+</div>
+
+</body>
+</html>
